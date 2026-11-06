@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "queries": [
+    {"id":"storage","args":["shell","df","-k","/data"]},
+    {"id":"memory","args":["shell","cat","/proc/meminfo"]},
+    {"id":"uptime","args":["shell","cat","/proc/uptime"]},
+    {"id":"kernel","args":["shell","uname","-r"]},
+    {"id":"packages-all","args":["shell","pm","list","packages","-i","--user","0"]},
+    {"id":"packages-user","args":["shell","pm","list","packages","-3","--user","0"]},
+    {"id":"packages-system","args":["shell","pm","list","packages","-s","--user","0"]},
+    {"id":"packages-disabled","args":["shell","pm","list","packages","-d","--user","0"]},
+    {"id":"features","args":["shell","pm","list","features"]},
+    {"id":"processes","args":["shell","ps","-A","-o","PID,PPID,USER,NAME"]},
+    {"id":"home","args":["shell","cmd","package","resolve-activity","--brief","--user","0","-a","android.intent.action.MAIN","-c","android.intent.category.HOME"]},
+    {"id":"home-alternatives","args":["shell","cmd","package","query-activities","--brief","--user","0","-a","android.intent.action.MAIN","-c","android.intent.category.HOME"]},
+    {"id":"display-size","args":["shell","wm","size"]},
+    {"id":"display-density","args":["shell","wm","density"]},
+    {"id":"display-modes-hdr","args":["shell","dumpsys","display"]},
+    {"id":"media-codecs","args":["shell","dumpsys","media.codec"]},
+    {"id":"thermal","args":["shell","dumpsys","thermalservice"]},
+    {"id":"network-interfaces","args":["shell","ip","-brief","address"]},
+    {"id":"listening-tcp","args":["shell","ss","-lnt"]},
+    {"id":"multiuser-support","args":["shell","pm","get-max-users"]},
+    {"id":"device-policy","args":["shell","dumpsys","device_policy"]},
+    {"id":"diagnostics-setting","args":["shell","settings","get","global","upload_diag_enable"]},
+    {"id":"adb-enabled","args":["shell","settings","get","global","adb_enabled"]},
+    {"id":"wireless-adb-setting","args":["shell","settings","get","global","adb_wifi_enabled"]}
+  ],
+  "properties": [
+    "ro.product.manufacturer", "ro.product.brand", "ro.product.model", "ro.product.device",
+    "ro.build.version.release", "ro.build.version.sdk", "ro.build.version.security_patch",
+    "ro.build.display.id", "ro.build.fingerprint", "ro.product.cpu.abilist",
+    "ro.boot.verifiedbootstate", "ro.boot.flash.locked", "ro.build.type",
+    "ro.build.tags", "service.adb.tcp.port", "persist.adb.tcp.port",
+    "persist.sys.usb.config", "sys.usb.config"
+  ]
+}

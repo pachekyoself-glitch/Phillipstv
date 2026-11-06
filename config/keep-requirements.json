@@ -1,0 +1,7 @@
+{
+  "requiredApplications": ["Netflix", "YouTube", "Plex", "Disney+", "Crunchyroll", "Google Play Store"],
+  "packageMappings": [],
+  "mappingPolicy": "Confirm labels in TV Settings plus package metadata and official publisher; never infer a package from a familiar string alone.",
+  "protectedCapabilities": ["Google Play Services", "Google Services Framework where required", "WebView where required", "DRM and Widevine", "Media codecs and playback", "Audio", "HDMI and input switching", "Remote and Bluetooth remote", "Wi-Fi and Ethernet", "System Settings", "Package Installer", "System UI", "Security and firmware updates", "Essential Philips services"],
+  "unknownPackagePolicy": "REVIEW; remain enabled"
+}

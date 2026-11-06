@@ -1,0 +1,14 @@
+# Official TV update workflow
+
+Updating the TV remains part of this project. Current version/security/kernel/build observations are retained in the private audit. The native system updater has been verified and checked; its refreshed UI reports up to date, with no offered update observed. No firmware was installed and current support is not inferred from this result.
+
+1. Read current manufacturer, product/vendor model, Android/API, build/display and security-patch properties using the authorized connection. A generic product name may remain generic; do not infer a retail model from a board/build string.
+2. Inspect the TV's supported Settings → About → System/Software update screen. Opening or triggering a check on the TV is a separate supported-UI action after the initial read-only audit. Do not invoke undocumented update broadcasts, activities or service commands.
+3. Prefer the built-in manufacturer updater and its officially signed OTA flow. The updater may identify the correct hardware internally even when the retail label is unavailable. Review its actual offered version, release information, current hardware/build, installation requirements and recovery guidance before proceeding.
+4. If USB-manual firmware is the only supported option, require the exact retail model/region and the corresponding official Philips/vendor support page and instructions. Verify the download origin and any supplied checksums/signatures. Do not use a similarly named model's image, unofficial firmware, bootloader tools or root.
+5. Present the concrete offered update and exact installation action, likely reboot/downtime, settings/launcher implications, and documented recovery limits for approval. A firmware update may not be reversible; do not promise a downgrade or complete backup of app/private data. No factory reset is included.
+6. Keep power stable and follow the updater's on-screen instructions without interruption. Observe the actual result rather than assuming completion from a download or reboot. Do not run debloating or launcher experiments during an update.
+7. Re-read the actual build/security patch after reboot, revalidate the connection if still needed, and test remote/Home/Settings, network, inputs/audio, all six retained apps and licensed playback. Recheck privacy settings, package states, default Home and child containment because firmware can change them.
+8. Close the debug session and disable the relevant TV network-debugging control/revoke authorization after verification. If anything fails, stop and use only supported, approved recovery. Obtain separate approval for any destructive recovery.
+
+If no update is offered or support cannot be established, record that finding accurately. Debloating, a launcher or DNS filtering does not install security patches or upgrade the physical panel.

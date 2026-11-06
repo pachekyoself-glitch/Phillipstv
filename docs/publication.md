@@ -1,0 +1,17 @@
+# Publish source only
+
+The owner authorized publishing source and making `https://github.com/pachekyoself-glitch/Phillipstv` public and open source after the audit/release checks. Publish only reviewed project source and general documentation. Do not publish raw reports or approval evidence, even to a private repository. A private repository is still an external service.
+
+Use `scripts/Test-Project.ps1 -CheckGit` before committing, inspect `git diff --cached --stat` and the exact staged diff, then commit and perform a normal fast-forward push. Never force push or overwrite existing remote work. Recheck the remote first; if new work appears, integrate it safely.
+
+For the owner's release, also run `scripts/Test-PrivatePublication.ps1 -RequireActualTarget`; a missing private target must block release rather than count as a comparison pass. The check scans reachable blob and commit/tag content locally. Inspect historical paths and other identifiers/secrets independently. Fetch all remote branches/tags before claiming history coverage, and inspect issues/PRs, workflow logs/artifacts, releases, wiki/discussions and forks where applicable. Public visibility exposes more than the latest file tree. Keep the private checkpoint and archived device material outside all published surfaces.
+
+Public releases also require `-RequirePublicMetadata`: author and committer emails must use GitHub noreply identities or reserved example.invalid addresses. `-HistoryCommit <reviewed full SHA>` limits history inspection to that exact publication ancestry, useful when the original private history is archived locally. Verify its tree equals the reviewed index before publishing; never merge the old private ancestry back into a clean public history. A branch rewrite alone cannot guarantee removal of GitHub's cached historical objects; retain private visibility until a complete publication strategy is verified.
+
+The project uses MIT for its own code/documentation. See LICENSE, THIRD-PARTY-NOTICES.md and CONTRIBUTING.md. No vendor application/firmware/tool binaries or educational assets are relicensed or bundled.
+
+Allowlisted source directories are scripts, config, docs, tests, launcher-research, and the documented planning portion of kids-learning. `reports/README.md`, `rollback/README.md`, and `kids-learning/library/README.md` are placeholders only. Tool archives, binaries, provenance records, reports, inventories, package dumps, screenshots, content assets, personal paths, credentials, serials and backups must stay untracked.
+
+The preflight protects expected paths and extensions; it cannot prove that allowed text contains no secret. Human inspection remains necessary. The source intentionally contains no device command output or child lessons requiring redistribution rights.
+
+The owner specifically requires the TV's actual IP address to remain off GitHub. Enter it only in ignored `.local/tv-address.txt` or the local target dialog. Keep session JSON, connection records and diagnostic files in `.local` or the private audit directory. Before each push, compare the locally stored target against all staged text and every reachable published Git blob locally (quiet exact-match check); never include the address in a GitHub/web search or in tool output. Report a pass/failure without printing the address. Synthetic fixture/example addresses are not the actual TV address, but must be replaced if they happen to collide with it.

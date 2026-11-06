@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "draft-example-not-content",
+  "title": null,
+  "version": null,
+  "ageMode": null,
+  "subject": null,
+  "learningObjective": null,
+  "sourceId": null,
+  "sourceUrl": null,
+  "sourceItemVersion": null,
+  "institution": null,
+  "accreditor": null,
+  "accreditationEvidenceUrl": null,
+  "accreditationVerifiedOn": null,
+  "educationalApproval": {"approved": false, "exactItemEvidence": null, "coversTvOfflineUse": false, "ageMode": null},
+  "rightsApproval": {"approved": false, "licenseOrPermissionEvidence": null, "allowsOfflineStorage": false, "allowsTvPresentation": false, "allowsAdaptation": false},
+  "parentApproval": {"approved": false, "reviewedOn": null, "localRecord": null},
+  "technicalValidation": {"passed": false, "localPath": null, "mediaType": null, "bytes": null, "sha256": null},
+  "state": "QUARANTINED_NOT_APPROVED"
+}

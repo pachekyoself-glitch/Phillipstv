@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "status": "DRAFT_NOT_APPROVED",
+  "package": "REPLACE_AFTER_LOCAL_DEVICE_REVIEW",
+  "classification": "REVIEW",
+  "currentState": null,
+  "purpose": null,
+  "dependencies": [],
+  "privacyImpact": "Unverified",
+  "performanceBenefit": "Unmeasured",
+  "risk": "Unknown",
+  "evidence": [],
+  "preferredSupportedUiAction": null,
+  "exactCommand": null,
+  "reversalCommand": null,
+  "verification": ["Remote and Home", "Settings", "All six retained apps and playback", "Network", "Inputs and audio", "Stability"],
+  "approval": {"approved": false, "scope": null, "approvedAt": null, "localEvidence": null},
+  "observedResult": null,
+  "postChangeVerification": null
+}

@@ -1,0 +1,13 @@
+# Philips-TV-Cleanup engineering rules
+
+- The owner authorizes staged work. A read-only audit comes first; package/settings/firmware changes require concrete approval and recovery/verification evidence. Current approvals and device-specific ledgers stay private, outside Git.
+- No Daybreak, root, unofficial flashing, bootloader/partition changes, factory reset, DRM/security-control bypass, or unrestricted remote management.
+- Use verified Google Platform Tools, loopback-only host ADB, explicit target selection and verified authorized transport. Network ADB requires explicit session authorization. Never use `tcpip`, `-a`, Bluetooth ADB, arbitrary host scans, or persistent network listeners.
+- Keep actual IPs, serials, accounts, inventories, technical/UI dumps, approvals, rollback records and local archives out of Git and external services. Run the actual-target publication check before each push; never put an actual address in a web/GitHub search.
+- Unknown packages remain REVIEW and enabled. Protect all six required apps and essential Google, firmware/security, DRM/media/audio, network, remote/input, settings/installer and system-UI services. Names alone never establish removal safety.
+- The proposal generator must remain non-executable. The supplied Games executor permits only its fixed package/action, with one-use target-bound approval, exact pre-state, checks and approved rollback. Do not generalize it into arbitrary execution.
+- Native updater inspection/checking is scoped to the requested official update workflow, a verified system handler and freshly observed Check control. No Install/Restart or manual firmware action without a concrete release-specific decision.
+- A temporary work-session timeout requires its exact approval and a private restore ledger. The bounded owner must restore the original value and disconnect; incomplete restoration prevents a successful closeout claim.
+- Children’s material requires formal institutional approval of the exact lessons and TV presentation, usage rights, parent review and technical validation. University accreditation is not project endorsement. Never fabricate approval or bundle unlicensed resources.
+- An offline learning app is not a device security boundary. Fail unsupervised deployment if adult apps, system settings, installation, voice, casting, inputs or other bypass routes remain reachable or untested.
+- Run `scripts/Test-Project.ps1`, Pester and publication checks after relevant changes. Preserve exact observations; app activity launch is not licensed-playback verification, and an awake snapshot is not a failed-wake capture.

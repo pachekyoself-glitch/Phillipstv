@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "checkedOn": "2026-11-04",
+  "policy": "Exact-item accredited-source approval, use rights, parent approval and technical validation required independently",
+  "sources": [
+    {
+      "id": "harvard-executive-function",
+      "publisher": "Center on the Developing Child at Harvard University",
+      "url": "https://developingchild.harvard.edu/resources/handouts-tools/activities-guide-enhancing-and-practicing-executive-function-skills/",
+      "institution": "Harvard University",
+      "accreditor": "New England Commission of Higher Education",
+      "accreditationEvidence": "https://www.neche.org/institutions/harvard-university/",
+      "ageBandsPublished": ["3-5", "5-7"],
+      "scope": "Executive function and self-regulation; not a complete curriculum",
+      "status": "CANDIDATE_ONLY",
+      "exactItemApprovalEvidence": null,
+      "offlineUseRights": "NOT_CLEARED_FOR_TV_ADAPTATION",
+      "bundledFiles": []
+    },
+    {
+      "id": "fsu-fcrr-reading",
+      "publisher": "Florida Center for Reading Research, Florida State University",
+      "url": "https://fcrr.org/fcrr-student-center-activities",
+      "institution": "Florida State University",
+      "accreditor": "Southern Association of Colleges and Schools Commission on Colleges",
+      "accreditationEvidence": "https://www.fsu.edu/about/accreditation",
+      "ageBandsPublished": ["Pre-K", "K-1", "2-3", "4-5"],
+      "scope": "Reading practice; grade bands require child-specific review, not age equivalence",
+      "status": "CANDIDATE_ONLY",
+      "exactItemApprovalEvidence": null,
+      "offlineUseRights": "RESTRICTED; do not modify or repost; obtain permission for any new use",
+      "bundledFiles": []
+    }
+  ],
+  "approvedItems": []
+}

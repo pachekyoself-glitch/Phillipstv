@@ -1,0 +1,27 @@
+# Never publish tools, device data, approvals, content, or generated artifacts.
+.tools/
+.local/
+reports/*
+!reports/README.md
+rollback/*
+!rollback/README.md
+kids-learning/library/*
+!kids-learning/library/README.md
+*.apk
+*.aab
+*.log
+*.csv
+*.png
+*.jpg
+*.zip
+*.bak
+*.keystore
+*.jks
+local.properties
+.gradle/
+build/
+.idea/
+.vscode/
+**/secrets*
+**/device*.json
+**/approval*.json
